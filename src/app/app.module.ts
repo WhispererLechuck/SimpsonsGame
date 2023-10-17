@@ -11,6 +11,7 @@ import { GameComponent } from './game/game.component';
 
 import { HomeComponent } from './home/home.component';
 import { SpinnerComponent } from './game/spinner/spinner/spinner.component';
+import { GameOverComponent } from './game/game-over/game-over.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SpinnerComponent } from './game/spinner/spinner/spinner.component';
     GameComponent,
     HomeComponent,
     SpinnerComponent,
+    GameOverComponent,
     
     
   ],
