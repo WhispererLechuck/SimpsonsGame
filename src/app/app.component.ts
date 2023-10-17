@@ -8,3 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'SimpsonsGame';
 }
+
+
+/* 
+To be added:
+
+- Notification once the user fails choosing the answer.
+- Better Game Over notification.
+- Improve UI in Game section.
+- Improve 'About me' section
+*/
