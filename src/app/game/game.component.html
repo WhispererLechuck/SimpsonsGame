@@ -1,6 +1,6 @@
 <div class="container text-center">
-    <div class="row">
-        <div class="col-8 simpsons ">
+    <div class="row " style="justify-content: space-around; align-items: center">
+        <div class="col-xl-8 simpsons" >
             <div class="row align-items-center">
                 <div *ngIf="quoteArray.length == 0 && !isLoading && !gameOverFlag" >
                     <h4>
@@ -30,13 +30,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 border border-dark border-1 rounded-3 gamingText">    <div>
+        <div class="col-xl-4 border border-dark border-1 rounded-3 gamingText" style=" max-width: 400px;">    
+            <div>
             <p>Top Score: {{highestScore}}</p>
             <p>Lives: {{lives}}</p>
             <p>Level: {{level}}</p>
             <button  (click)="newGame()" class="btn btn-outline-success">New Game</button>
             <button [disabled]="!correctFlag" (click)="nextLevel()" class="btn btn-warning">Next level</button>
-        </div></div>
+        </div>
+    </div>
     </div>
     
 

@@ -93,7 +93,6 @@ export class GameComponent implements OnInit{
         this.gameOver();
       }  
     } else{
-      alert('Correct, the character is ' +this.characters[index]);
       // this.nextLevel();
       if(this.buttons!=undefined){
         for (let index = 0; index < this.buttons.length; index++) {
@@ -129,9 +128,7 @@ export class GameComponent implements OnInit{
   ngAfterViewInit() {
     this.buttonElements.changes.subscribe((buttons: QueryList<any>) => {
       // Realiza operaciones con los botones
-      console.log(buttons.toArray()); // Esto imprimirá un array con los botones
       this.buttons = buttons.toArray();
-      console.log(this.buttons[1]);
       
     });
   }
